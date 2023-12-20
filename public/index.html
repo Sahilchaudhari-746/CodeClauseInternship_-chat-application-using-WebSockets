@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/89a8b4c4dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>chat app</title>
+</head>
+<body>
+   <h1 class="title"> chat app 💬</h1> 
+   <div class="main">
+    <div class="name">
+        <span><i class="fa-solid fa-user"></i></span>
+        <input type="text" id="name-input" class="name-input" value="anonymous" maxlength="20">
+    </div>
+    <ul class="message-container" id="message-container">
+        <li class="message-left">
+            <p class="message">
+                Lorem, ipsum.
+                <span>bluewd . 26july 10:40</span>
+            </p>
+        </li>
+        <li class="message-right">
+            <p class="message">
+                Lorem, ipsum.
+                <span>bluewd . 26july 10:40</span>
+            </p>
+        </li>
+        <li class="message-feedback">
+            <p class="feedback" id="feedback">
+                killer is typing a message✍️
+            </p>
+        </li>
+    </ul>
+    <form  class="message-form" id="message-form">
+        <input type="text" name="message" id="message-input" class="message-input">
+        <div class="v-divider"></div>
+        <button type="submit" class="send-button">Send <span><i class="fa-solid fa-paper-plane"></i></span></button>
+    </form>
+
+</div>
+<h3 class="clients-total" id="clients-total">Total clients: 2</h3>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-+H4iLjY3JsKiF2V6N366in5IQHj2uEsGV7Pp/GRcm0fn76aPAk5V8xB6n8fQhhSonTqTXs/klFz4D0GIn6Br9g==" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
